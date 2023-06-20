@@ -1,0 +1,739 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Semibold.woff');
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url('../fonts/Georgia.woff');
+}
+
+body{
+    margin: 0;
+}
+
+.main-container{
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.menu .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+}
+
+img{
+    display: block;
+}
+
+.menu-pages, .menu-button{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.menu-name{
+    width: 20%;
+    padding-top: 25px;
+}
+
+.menu-pages{
+    width: 50%;
+    padding-top: 28px;
+    justify-content: space-around;
+}
+
+.menu-pages-text:hover{
+    font-size: larger;
+}
+
+.menu-pages-text{
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #292929;
+    text-decoration: none;
+}
+
+.menu-button{
+    width: 30%;
+    padding-top: 15px;
+    justify-content: flex-end;
+}
+
+.menu-button a{
+    padding-top: 14px;
+}
+
+
+button{
+    width: 120px;
+    height: 45px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 35px;
+}
+
+button:hover{
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.bg{
+    background-image: url('../img/BG.png');
+    background-color: rgb(214, 213, 213);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.fade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg .container{
+    position: relative;
+    z-index: 2;
+}
+
+.bg-text{
+    width: 390px;
+    padding-bottom: 220px;
+}
+
+h1{
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 56px;
+    color: #01996D;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    padding-top: 170px;
+}
+
+h2{
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 45px;
+    color: #01996D;
+    line-height: 78px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    text-align: center;
+    padding-top: 135px;
+    margin-bottom: 0;
+    letter-spacing: 2.8px;
+}
+
+h4{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    padding-top: 95px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+h5{
+    font-family: 'Georgia';
+    font-size: 15.9292px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.h-write{
+    text-align: right;
+}
+
+.bg-text p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #484848;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.bg-text button{
+    width: 227px;
+    height: 65px;
+    margin-left: 0;
+}
+
+.howitworksPart{
+    padding-top: 120px;
+}
+
+.howitworks{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+}
+
+.howPart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.howitworksPart p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #424242;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.howitworksexpl{
+    width: 50%;
+}
+
+.howitworksexpl p{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #424242;
+}
+
+.steps .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.step-personalize{
+    width: 30%;
+    position: relative;
+    /* display: inline-block; */
+    z-index: 1;
+}
+
+.step-number{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 225px;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+    width: 157px;
+    height: 255px;
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    z-index: 0;
+}
+
+.numbertwo{
+    top: 315px;
+}
+
+.numberthree{
+    top: 65px;
+}
+
+.step-text{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #424242;
+    margin-bottom: 0;
+    margin-top: 55px;
+}
+
+.steps-img{
+    margin-top: 60px;
+    border-radius: 12px;
+}
+
+.steps img{
+    width: 100%;
+}
+
+.step-write, .step-alivio{
+    width: 30%;
+    position: relative;
+    z-index: 1;
+}
+
+.step-write{
+    padding-top: 280px;
+}
+
+.step-write img{
+    margin-top: 39px;
+}
+
+.step-alivio{
+    padding-top: 35px;
+}
+
+.video{
+    width: 100%;
+    background: #245852;
+    margin-top: 50px;
+}
+
+.video .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-about{
+    width: 40%;   
+}
+
+.h-video{
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 70px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.video-about p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-top: 33px;
+    margin-bottom: 0;
+}
+
+.video-about button{
+    margin-left: 0px;
+    margin-top: 57px;
+    width: 240px;
+    height: 65px;
+}
+
+.video-img{
+    width: 60%;
+    border-radius: 16px;
+    padding: 120px 0 120px;
+}
+
+.video-img img{
+    width: 100%;
+}
+
+.customer{
+    padding-top: 120px;
+}
+
+.customer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.customer-photo{
+    width: 40%;
+    position: relative;
+    z-index: 0;
+}
+
+.about-product{
+    width: 45%;
+}
+
+.photo-bg{
+    background: rgba(1, 153, 109, 0.2);
+    border-radius: 18px;
+}
+
+.photo-bg img{
+    width: 100%;
+}
+
+.our-product{
+    color: #424242;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-size: 25px;
+    line-height: 39px;
+    color: #424242;
+}
+
+.about-product-text{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+    margin: 0;
+    padding: 20px 0 50px;
+}
+
+.about-product button{
+    width: 227px;
+    height: 65px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.customer-card{
+    width: 60%;
+    position: absolute;
+    top: 65%;
+    left: -14%;
+    z-index: 1;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: -2px 2px 9px 3px rgba(1, 153, 109, 0.2);
+}
+
+.card-name{
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 14.49px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 22.64px;
+    margin-bottom: 0;
+}
+
+hr{
+    width: 110.49px;
+}
+
+.card-photo{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgba(1, 153, 109, 0.2);
+    margin: 0 auto;
+}
+
+.card-photo-name{
+    font-family: 'Lato';
+    font-size: 11.9351px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+li{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 10.6195px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+
+.footer{
+    background: #245852;
+    margin-top: 240px;
+}
+
+.footer p{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding-bottom: 45px;
+    margin: 0;
+}
+
+h4:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    font-size: 28px;
+    color: #000000;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1350px) {
+    .video-about {
+        width: 45%;
+    }
+    .video-img {
+        width: 55%;
+    }
+    .about-product {
+        width: 48%;
+    }
+    h2{
+        font-size: 42px;
+    }
+    li{
+        margin-left: 38px;
+    }
+
+}
+
+@media all and (max-width: 1199px) {
+    h1{
+        font-size: 50px;
+        padding-top: 40px;
+    }
+    .bg-text{
+        padding-bottom: 85px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 56px;
+    }
+    .howitworksexpl p {
+        font-size: 18px;
+    }
+    .h-video {
+        font-size: 30px;
+        line-height: 54px;
+    }
+    .customer-card {
+        width: 200px;
+    }
+    li {
+        margin-left: 12px;
+        line-height: 16px;
+    }
+    .footer {
+        margin-top: 200px;
+    }
+    h4 {
+        font-size: 25px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    .footer p {
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+}
+
+@media all and (max-width: 999px) {
+    .menu-name {
+        width: 16%;
+    }
+    .menu .container {
+        justify-content: space-between;
+    }
+    .menu-button {
+        width: 27%;
+    }
+    button{
+        width: 100px;
+        margin-left: 10px;
+    }
+    .bg-text {
+        width: 300px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    .bg-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .bg-text button {
+        width: 180px;
+        height: 50px;
+    }
+    .howitworksPart p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 45px;
+    }
+    .step-number {
+        font-size: 100px;
+        top: 0;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 100px;
+    }
+    .step-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 38px;
+    }
+    .steps-img {
+        margin-top: 30px;
+    }
+    .step-write {
+        padding-top: 170px;
+    }
+    .numbertwo {
+        top: 162px;
+    }
+    .numberthree {
+        top: 34px;
+    }
+    .h-video {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .video-about p {
+        font-size: 12px;
+    }
+    .video-about button {
+        margin-top: 30px;
+        width: 170px;
+        height: 50px;
+    }
+    .our-product {
+        font-size: 14px;
+    }
+    .about-product-text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .about-product button {
+        width: 180px;
+        height: 54px;
+    }
+    .card-name {
+        margin-top: 12px;
+    }
+    .card-photo-name {
+        line-height: 10px;
+    }
+    ul{
+        margin: 0;
+    }
+    h5{
+        margin-bottom: 5px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .menu-pages-text {
+        font-size: 10px;
+    }
+    .menu .container {
+        flex-wrap: wrap;
+    }
+    .menu-name {
+        width: 30%;
+    }
+    .menu-pages {
+        width: 64%;
+    }
+    .menu-button {
+        width: 100%;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .bg-text {
+        width: 280px;
+    }
+    .howitworksPart {
+        padding-top: 70px;
+    }
+    h2 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .steps .container {
+        flex-wrap: wrap;
+    }
+    .step-personalize, .step-write, .step-alivio {
+        width: 100%;
+    }
+    .step-write {
+        padding-top: 24px;
+    }
+    .numbertwo {
+        top: 18px;
+    }
+    .video .container {
+        flex-wrap: wrap;
+    }
+    .video-about, .video-img {
+        width: 100%;
+    }
+    .h-video {
+        padding-top: 34px;
+    }
+    .video-img {
+        padding: 75px 0 75px;
+    }
+    .customer {
+        padding-top: 90px;
+    }
+    .customer .container {
+        flex-wrap: wrap;
+    }
+    .customer-photo, .about-product {
+        width: 100%;
+    }
+    .customer-card {
+        visibility: hidden;
+    }
+    .about-product{
+        padding-top: 20px;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+
+
